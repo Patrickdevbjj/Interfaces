@@ -41,8 +41,8 @@ public class Interfaces {
         rentalService.processInvoice(car);
         
         System.out.println("FATURA: ");
-        System.out.println("Pagamento Básico: " + car.getInvoice().getBasicPaymant());
-        System.out.println("Imposto: " + car.getInvoice().getTax());
-        System.out.println("Pagamento total: " + car.getInvoice().getTotalPaymant());
+        System.out.println("Pagamento Básico: " + String.format("%2f", car.getInvoice().getBasicPaymant()));
+        System.out.println("Imposto: " + String.format("%2f",car.getInvoice().getTax() ) );
+        System.out.println("Pagamento total: " + String.format("%2f",car.getInvoice().getTotalPaymant()));
     }
 }
